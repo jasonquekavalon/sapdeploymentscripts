@@ -21,7 +21,7 @@
 if [[ "${1}" ]]; then
   readonly DEPLOY_URL="${1}"
 else
-  readonly DEPLOY_URL="https://storage.googleapis.com/sapdeploy/dm-templates"
+  readonly DEPLOY_URL="https://storage.googleapis.com/sapdeployment"
 fi
 
 ## Import includes
