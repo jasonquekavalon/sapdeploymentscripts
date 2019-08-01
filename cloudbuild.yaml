@@ -4,6 +4,6 @@ steps:
 - name: gcr.io/cloud-builders/gsutil
   args: ['-D', 'setacl', '-r', 'public-read', 'gs://sapdeployment/*']
 - name: gcr.io/cloud-builders/gsutil
-  args: ['setmeta', '-h', '"cache-control:private, max-age=0, no-transform"', 'gs://sapdeployment/*/*']
+  args: ['setmeta', '-h', 'cache-control:private, max-age=0, no-transform', 'gs://sapdeployment/*/*']
 - name: gcr.io/cloud-builders/gsutil
-  args: ['setmeta', '-h', '"cache-control:private, max-age=0, no-transform"', 'gs://sapdeployment/*']
+  args: ['setmeta', '-h', 'cache-control:private, max-age=0, no-transform', 'gs://sapdeployment/*']
